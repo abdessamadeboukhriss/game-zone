@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+:root{--bg:#0b1020;
+    --panel:#141c32;
+    --muted:#9aa6c1;
+    --text:#f5f7ff;
+    --cyan:#5eead4;
+    --purple:#9b8cff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;
+background:var(--bg);
+color:var(--text);
+font-family:'DM Sans',sans-serif}
+.topbar{height:76px;
+max-width:1120px;
+margin:auto;
+padding:0 24px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+border-bottom:1px solid #ffffff12}
+.brand{font:700 21px 'Space Grotesk';
+color:white;
+text-decoration:none;
+letter-spacing:.5px}
+.brand span:last-child{color:var(--cyan)}
+.brand-icon{margin-right:8px}
+nav{display:flex;gap:28px}
+nav a{color:#c3cbe0;
+text-decoration:none;
+font-size:14px}
+nav a:hover{color:var(--cyan)}
+main{max-width:1120px;
+margin:auto;padding:0 24px}
+.hero{min-height:420px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:58px 4px 54px;
+overflow:hidden}
+.hero-copy{max-width:560px;
+z-index:1}
+.eyebrow{font-size:11px;
+font-weight:800;
+letter-spacing:2.2px;
+color:var(--cyan);
+margin:0 0 14px}
+h1,h2,h3,p{margin-top:0}
+h1{font:700 clamp(42px,6vw,68px)/1.05 'Space Grotesk';
+letter-spacing:-2.5px;
+margin-bottom:18px}
+h1 span{color:var(--cyan)}
+.hero-text{color:var(--muted);
+font-size:16px;
+line-height:1.7;
+max-width:470px;
+margin-bottom:26px}
+.primary-btn{display:inline-flex;
+gap:24px;
+align-items:center;
+background:var(--cyan);
+color:#07131b;
+padding:14px 19px;
+border-radius:12px;
+text-decoration:none;
+font-weight:800;
+font-size:14px}
+.primary-btn:hover{transform:translateY(-2px)}
+.hero-art{width:390px;
+    height:310px;
+    display:grid;
+    place-items:center}
+.bigpad{font-size:145px;
+    filter:drop-shadow(0 20px 35px #0009);
+    transform:rotate(-12deg);z-index:1}
+.orbit{position:absolute;
+    border:1px solid #5eead455;
+    border-radius:50%;
+    width:270px;
+    height:270px}
+.orbit-two{width:350px;
+    height:210px;
+    transform:rotate(55deg);
+    border-color:#9b8cff55}
+.float{position:absolute;
+    font-size:32px;
+    color:var(--cyan)}
+.f1{top:30px;right:42px}
+.f2{bottom:38px;left:40px;
+    color:var(--purple)}
+.f3{top:70px;
+    left:18px;
+    color:#ffbd69}
+.games-section{padding:35px 0 70px}
+.section-heading{display:flex;
+    align-items:end;
+    justify-content:space-between;
+    margin-bottom:22px}
+.section-heading
+ h2{font:700 34px 'Space Grotesk';
+    margin:0}
+.game-count{color:var(--muted);
+    font-size:11px;
+    letter-spacing:1.3px}
+.game-grid{display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px}
+.game-card{background:var(--panel);
+    border:1px solid #ffffff12;
+    border-radius:17px;
+    overflow:hidden;
+    text-decoration:none;
+    color:var(--text);
+    transition:.2s}
+.game-card:hover{transform:translateY(-5px);
+    border-color:#5eea9a88;
+    box-shadow:0 16px 35px #0003}
+.cover{height:190px;
+    display:grid;
+    place-items:center;
+    position:relative;
+    overflow:hidden}
+    .cover-emoji{font-size:82px;
+    filter:drop-shadow(0 10px 15px #0004)}
+.snake-cover{background:radial-gradient(circle at 50% 45%,#1c806d,#123d49 70%)}
+.memory-cover{background:radial-gradient(circle at 50% 45%,#7655c9,#30285d 75%)}
+.breakout-cover{background:radial-gradient(circle at 50% 45%,#bd683f,#542d4e 75%)}
+.cover-tag{position:absolute;
+    top:15px;left:15px;
+    background:#07131b88;
+    border:1px solid #ffffff33;
+    border-radius:30px;padding:6px 10px;
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:1px}
+.card-info{padding:17px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between}
+.card-info h3{font:700 20px 'Space Grotesk';
+    margin:0 0 5px}
+.card-info p{color:var(--muted);
+    font-size:12px;
+    margin:0}
+.play-icon{width:35px;
+    display:grid;-items:center;
+    background:#5eead4;
+    color:#07131b;
+    border-radius:50%;
+    font-size:12px;
+    padding-left:2px}
+.about{border-top:1px solid #ffffff16;
+    padding:25px 0;
+    display:flex;
+    gap:12px;
+    align-items:center;
+    color:var(--muted);
+    font-size:13px}
+.about p{margin:0}
+.about strong{color:white}
+footer{text-align:center;
+    border-top:1px solid #ffffff12;
+    color:#78849f;
+    padding:23px;
+    font-size:11px}
+@media(max-width:760px)
+{.hero{padding-top:48px;
+    min-height:auto}
+.hero-art{width:190px;
+    opacity:.65;
+    margin-right:-65px}
+.bigpad{font-size:95px}
+.orbit{width:180px;
+    height:180px}
+.orbit-two{width:220px;
+    height:140px}
+.game-grid{grid-template-columns:1fr 1fr}
+.cover{height:150px}
+.card-info{padding:13px}
+.card-info p{font-size:11px}}
+@media(max-width:480px){.hero-art{display:none}.hero{padding:55px 0}.game-grid{grid-template-columns:1fr}.cover{height:190px}.game-count{font-size:9px}nav{gap:15px}}

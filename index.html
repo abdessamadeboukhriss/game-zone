@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game Zone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-icon">🎮</span> GAME<span>ZONE</span></a>
+    <nav><a href="#games">Jeux</a><a href="#about">À propos</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">TON ESPACE DE JEU</p>
+        <h1>Choisis un jeu.<br><span>Et amuse-toi.</span></h1>
+        <p class="hero-text">Des petits jeux gratuits directement dans ton navigateur. Clique sur une carte pour jouer ici, sans quitter le site.</p>
+        <a class="primary-btn" href="#games">Découvrir les jeux <span>↘</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="bigpad">🎮</div><span class="float f1">✦</span><span class="float f2">●</span><span class="float f3">＋</span>
+      </div>
+    </section>
+
+    <section class="games-section" id="games">
+      <div class="section-heading">
+        <div><p class="eyebrow">ARCADE</p><h2>Nos jeux</h2></div>
+        <span class="game-count">3 JEUX DISPONIBLES</span>
+      </div>
+      <div class="game-grid">
+        <a class="game-card" href="play.html?game=snake">
+          <div class="cover snake-cover"><span class="cover-emoji">🐍</span><span class="cover-tag">ARCADE</span></div>
+          <div class="card-info"><div><h3>Snake</h3><p>Mange les pommes et grandis.</p></div><span class="play-icon">▶</span></div>
+        </a>
+        <a class="game-card" href="play.html?game=memory">
+          <div class="cover memory-cover"><span class="cover-emoji">🧠</span><span class="cover-tag">RÉFLEXION</span></div>
+          <div class="card-info"><div><h3>Memory</h3><p>Retrouve les paires identiques.</p></div><span class="play-icon">▶</span></div>
+        </a>
+        <a class="game-card" href="play.html?game=breakout">
+          <div class="cover breakout-cover"><span class="cover-emoji">🧱</span><span class="cover-tag">ARCADE</span></div>
+          <div class="card-info"><div><h3>Breakout</h3><p>Casse les briques avec la balle.</p></div><span class="play-icon">▶</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="about" id="about"><span>✨</span><p><strong>Game Zone</strong> — une petite salle d'arcade créée avec HTML, CSS et JavaScript.</p></section>
+  </main>
+  <footer>© 2026 Game Zone · Fait pour jouer dans ton navigateur</footer>
+</body>
+</html>
